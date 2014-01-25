@@ -6,13 +6,13 @@
 <script src="/public/jquery.mobile-1.1.0.js"></script>
 <script type="text/javascript" src="/public/verticalSlider.js"></script>
 <link href="/public/verticalSlider.css" rel="stylesheet" type="text/css" />
-	<script>
-	$(function() {
-      init_slider('elevator', 0)
-      init_slider('aileron', 50)
-      init_slider('throttle', 50)
-      init_slider('rudder', 50)
-	});
+<script>
+  $(function() {
+    init_slider('elevator', 0)
+    init_slider('aileron', 50)
+    init_slider('throttle', 50)
+    init_slider('rudder', 50)
+  });
 
   function init_slider(slider_name, initial_value) {
     input = $("#" + slider_name)
@@ -24,16 +24,16 @@
   }
 
   $('html, body').on('touchstart touchmove', function(e){
-      e.preventDefault();
+    e.preventDefault();
   });
-	</script>
-  <style>
-    html, body{
-     max-width:100%;
-     max-height:100%;
-     overflow:hidden;
-    }
-  </style>
+</script>
+<style>
+  html, body{
+    max-width:100%;
+    max-height:100%;
+    overflow:hidden;
+  }
+</style>
 </head>
 <body height="100%">
 <form height="100%">
@@ -41,7 +41,8 @@
     <tr>
       <td rowspan="2" width="10%">
         <label for="elevator">Elevator</label>
-        <input type="range" id="elevator" value="50" min="0" max="100" sliderOrientation="verticalInverted">
+        <input type="range" id="elevator" value="50" min="0" max="100"
+          sliderOrientation="verticalInverted">
       </td>
       <td>
         <label for="rudder">Rudder</label>
@@ -49,7 +50,8 @@
       </td>
       <td rowspan="2" width="10%">
         <label for="throttle">Throttle</label>
-        <input type="range" id="throttle" value="0" min="0" max="100" sliderOrientation="verticalInverted">
+        <input type="range" id="throttle" value="0" min="0" max="100"
+          sliderOrientation="verticalInverted">
       </td>
     </tr>
     <tr>
